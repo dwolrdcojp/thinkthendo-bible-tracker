@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+//comment
 async function getBibles() {
 				const res = await fetch('https://api.scripture.api.bible/v1/bibles', {
 								cache: 'no-store',
