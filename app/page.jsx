@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 async function getBibles() {
 				const res = await fetch('https://api.scripture.api.bible/v1/bibles', {
+								cache: 'no-store',
 								method: 'GET',
 								headers: {
 												'api-key': process.env.BIBLE_API_KEY
